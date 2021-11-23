@@ -12,3 +12,14 @@ Scan the QR Code
 
 Scanning the QR Code in the document gives us the above encrypted text. Upon obervation this string can be seen to have characters ranging from [a-b], [A-B], [0-9] and even '='.
 A similar character set can be observed in *Base64* syntax.
+
+
+
+# **Step 2**
+
+Run the string through a *Base64 decrypter*
+
+>
+Great job. Julius Caeser was born in the 100 BC:
+PDA JATP YELDAN GAUOMQWNA EO PDA WHLDWXAPO SEPDKQP F
+OPXWODPSKQLONCXQNUJEOLXPWAEHMOUZOEQXXVKUJOWBLMWXPQUIOELPMYKYEHMOGOKYQXAXKYKDLYQZYLYHAWWBLMWXQYLWVWOY
