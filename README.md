@@ -44,4 +44,10 @@ Decrypt the message using a *Playfair cipher* with a keysquare *'ABCDEFGHIJKLMNO
 
 > RSAENCRYPTNUMBERTWOHUNDREDFOURTYTHREEWITHNVALUEASTWOTHOUSANDFOURHUNDREDANDNINETEENANDEVALUEASELEVENX
 
-Expanding this string into a more readable format return `RSA ENCRYPT NUMBER TWO HUNDRED FOURTY THREE WITH N-VALUE AS TWO THOUSAND FOUR HUNDRED AND NINETEEN AND E-VALUE AS ELEVEN X`
+Expanding this string into a more readable format return `RSA ENCRYPT NUMBER TWO HUNDRED FOURTY THREE WITH N-VALUE AS TWO THOUSAND FOUR HUNDRED AND NINETEEN AND E-VALUE AS ELEVEN X.` 
+
+
+
+# **Step 5**
+
+As per the above result, run the `243` through an RSA encrypter with `n = 2419` and `e = 11`
