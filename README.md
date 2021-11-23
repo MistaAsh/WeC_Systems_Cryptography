@@ -22,3 +22,14 @@ Run the string through a *Base64 decrypter*
 > Great job. Julius Caeser was born in the 100 BC:
 PDA JATP YELDAN GAUOMQWNA EO PDA WHLDWXAPO SEPDKQP F
 OPXWODPSKQLONCXQNUJEOLXPWAEHMOUZOEQXXVKUJOWBLMWXPQUIOELPMYKYEHMOGOKYQXAXKYKDLYQZYLYHAWWBLMWXQYLWVWOY
+
+The oddly specific mention of the king 'Julius Caesar' indicates that the initial message has been passed through a *Caesar cipher*. Hence, in-order to reverse it, we will now be applying *Caesar Cipher* on the encrypted message.
+
+
+
+# **Step 3**
+
+Decrypt the message using a *Caesar Cipher* (upon observation we get that a shift = +22 will output a readable message)
+
+> THE NEXT CIPHER KEYSQUARE IS THE ALPHABETS WITHOUT J
+STBASHTWOUPSRGBURYNISPBTAEILQSYDSIUBBZOYNSAFPQABTUYMSIPTQCOCILQSKSOCUBEBOCOHPCUDCPCLEAAFPQABUCPAZASC
