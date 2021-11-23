@@ -33,3 +33,15 @@ Decrypt the message using a *Caesar Cipher* (upon observation we get that a shif
 
 > THE NEXT CIPHER KEYSQUARE IS THE ALPHABETS WITHOUT J
 STBASHTWOUPSRGBURYNISPBTAEILQSYDSIUBBZOYNSAFPQABTUYMSIPTQCOCILQSKSOCUBEBOCOHPCUDCPCLEAAFPQABUCPAZASC
+
+The message 'cipher keysquare without J' is a clear implication of the necessary usage of the *Playfair cipher* in which a 5x5 keysquare is usually made to decrypt the message while excluding the 'J' alphabet (usually)
+
+
+
+# **Step 4**
+
+Decrypt the message using a *Playfair cipher* with a keysquare *'ABCDEFGHIJKLMNOPQRSTUVWXYZ'*
+
+> RSAENCRYPTNUMBERTWOHUNDREDFOURTYTHREEWITHNVALUEASTWOTHOUSANDFOURHUNDREDANDNINETEENANDEVALUEASELEVENX
+
+Expanding this string into a more readable format return `RSA ENCRYPT NUMBER TWO HUNDRED FOURTY THREE WITH N-VALUE AS TWO THOUSAND FOUR HUNDRED AND NINETEEN AND E-VALUE AS ELEVEN X`
