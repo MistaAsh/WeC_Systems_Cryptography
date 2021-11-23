@@ -19,7 +19,6 @@ A similar character set can be observed in *Base64* syntax.
 
 Run the string through a *Base64 decrypter*
 
->
-Great job. Julius Caeser was born in the 100 BC:
+> Great job. Julius Caeser was born in the 100 BC:
 PDA JATP YELDAN GAUOMQWNA EO PDA WHLDWXAPO SEPDKQP F
 OPXWODPSKQLONCXQNUJEOLXPWAEHMOUZOEQXXVKUJOWBLMWXPQUIOELPMYKYEHMOGOKYQXAXKYKDLYQZYLYHAWWBLMWXQYLWVWOY
