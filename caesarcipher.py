@@ -7,6 +7,8 @@ def caesarcipher(arr, shift):
                 print(chr(ord(i) + shift - 26), end='')
             else:
                 print(chr(ord(i) + shift), end='')
+        else:
+            print(i, end='')
 
 
 print("Encoded string: ", end='')
