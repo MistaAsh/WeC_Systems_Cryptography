@@ -17,7 +17,7 @@ A similar character set can be observed in *Base64* syntax.
 
 # **Step 2**
 
-Run the string through a *Base64 decrypter*
+Run the string through a [*Base64*](#base64) *decrypter*
 
 > Great job. Julius Caeser was born in the 100 BC:
 PDA JATP YELDAN GAUOMQWNA EO PDA WHLDWXAPO SEPDKQP F
@@ -68,4 +68,4 @@ Run the above string through a caesarcipher (+5) decoder.
 
 <br><br>
 
-Base64: 
+<a name = 'base64'>Base64</a>
