@@ -10,9 +10,7 @@ def caesarcipher(arr, shift):
         else:
             print(i, end='')
 
-
-print("Encoded string: ", end='')
-arr = input()
+arr = input('Encoded string: ')
 
 for i in range(1, 26):
     caesarcipher(arr.upper(), i)
