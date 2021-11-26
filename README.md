@@ -95,6 +95,6 @@ RSA is an asymmetrc encryption algorithm having two different keys, private and 
 
 While the math and proofs behind RSA encryption is a bit complex, in a general sense, it follows this formula
 
-`Encrypted message = m<sup>e</sup> % n`
+Encrypted message = m<sup>e</sup> % n
 
 where m = message to be encrypted, e = exponent in public key and n = modulo of public key
