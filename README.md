@@ -10,7 +10,7 @@ Scan the QR Code
 
 > R3JlYXQgam9iLiBKdWxpdXMgQ2Flc2VyIHdhcyBib3JuIGluIHRoZSAxMDAgQkM6ClBEQSBKQVRQIFlFTERBTiBHQVVPTVFXTkEgRU8gUERBIFdITERXWEFQTyBTRVBES1FQIEYKT1BYV09EUFNLUUxPTkNYUU5VSkVPTFhQV0FFSE1PVVpPRVFYWFZLVUpPV0JMTVdYUFFVSU9FTFBNWUtZRUhNT0dPS1lRWEFYS1lLRExZUVpZTFlIQVdXQkxNV1hRWUxXVldPWQ==
 
-Scanning the QR Code in the document gives us the above encrypted text. Upon obervation this string can be seen to have characters ranging from [a-b], [A-B], [0-9] and even '='.
+Scanning the QR Code in the document gives us the above encrypted text. Upon obervation this string can be seen to have characters ranging from `[a-b], [A-B], [0-9] and even '='`.
 A similar character set can be observed in *Base64* syntax.
 
 <br>
@@ -44,7 +44,7 @@ Decrypt the message using a *Playfair cipher* with a keysquare *'ABCDEFGHIJKLMNO
 
 > RSAENCRYPTNUMBERTWOHUNDREDFOURTYTHREEWITHNVALUEASTWOTHOUSANDFOURHUNDREDANDNINETEENANDEVALUEASELEVENX
 
-Expanding this string into a more readable format return `RSA ENCRYPT NUMBER TWO HUNDRED FOURTY THREE WITH N-VALUE AS TWO THOUSAND FOUR HUNDRED AND NINETEEN AND E-VALUE AS ELEVEN X.` 
+Expanding this string into a more readable format returns `RSA ENCRYPT NUMBER TWO HUNDRED FOURTY THREE WITH N-VALUE AS TWO THOUSAND FOUR HUNDRED AND NINETEEN AND E-VALUE AS ELEVEN X.` 
 
 <br>
 
@@ -68,4 +68,11 @@ Run the above string through a caesarcipher (+5) decoder.
 
 <br><br>
 
-<a name = 'base64'>Base64</a>
+<a name = 'base64'><h3>Base64</h3></a>
+As the name suggests, Base64 is an encoding algorithm which helps to convert 8-bit ASCII strings into a 6-bit (2<sup>6</sup>=64) language with a character set consisting of `[A-Z, a-z, 0-9, +, /] and '='` which is used for padding.
+
+To convert Base64 into ASCII we first read each character in the string, get its index in the *Base64 character set*, convert the decimal value of the index to its bit representation (`bit`) and append the 6-bit string to a master string (`final_bit`).
+
+(Note: we also have to take care of the extra '=' paddings while converting. In my program however, I have manually removed the padding and decremented the total bits by 4)
+
+Now I grouped the remaining bits into parts of 8 and converted the binary first to decimal and then to its corresponding ASCII value.
