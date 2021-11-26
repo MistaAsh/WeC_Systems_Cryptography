@@ -50,7 +50,7 @@ Expanding this string into a more readable format returns `RSA ENCRYPT NUMBER TW
 
 # **Step 5**
 
-As per the above result, run the `243` through an RSA encrypter with `n = 2419` and `e = 11`
+As per the above result, run the `243` through an [RSA encrypter](#rsa) with `n = 2419` and `e = 11`
 
 > Encrypted message = 1982
 
@@ -87,6 +87,11 @@ In this task however, I found it much more easier to brute force the caesar ciph
 <br><br>
 
 <a name = 'playfair'><h3>Playfair Cipher</h3></a>
+Playfair Cipher is an encryption algorithm which uses a matrix of alphabets as the key, usually a 5x5 with 1 alphabet emitted (usuall J). Before encrypting, the string is first split into pairs of two while ensuring that each character in the pair is unique, else it is filled with a bogus letter.
+
+In the cipher matrix, if both letters in a pair are in the same column we change the letter to the letter below. Similarly, if in the same row, we take the letter to its right. However, if neither cse is valid, we create a rectangle with both letters as opposite veritces and take the correspong horizontally opposite vertex. 
+
+The decryption process for playfair is fairly same with us just reversing the algorithm using its key square
 
 <br><br>
 
