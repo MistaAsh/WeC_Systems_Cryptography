@@ -1,6 +1,6 @@
 ## WeC_Systems_Cryptography
 
-My solution approach to solving the WeC Crytography challenge
+My solution approach to solving the WeC Crytography challenge. By Ashish Bharath (201CS208)
 
 <br>
 
@@ -40,7 +40,7 @@ The message 'cipher keysquare without J' is a clear implication of the necessary
 
 # **Step 4**
 
-Decrypt the message using a *Playfair cipher* with a keysquare *'ABCDEFGHIJKLMNOPQRSTUVWXYZ'*
+Decrypt the message using a [*Playfair cipher*](#playfair) with a keysquare *'ABCDEFGHIJKLMNOPQRSTUVWXYZ'*
 
 > RSAENCRYPTNUMBERTWOHUNDREDFOURTYTHREEWITHNVALUEASTWOTHOUSANDFOURHUNDREDANDNINETEENANDEVALUEASELEVENX
 
@@ -62,7 +62,7 @@ The encrypted message we get after running the rsa algorithm returns the passwor
 
 # **Step 6**
 
-Run the above string through a caesarcipher (+5) decoder.
+Run the above string through a [*Caesar Cipher*](#caesar) (+5) decoder.
 > OH, YOU FOUND ME😔. CONGRATS. THIS IS THE ENDGOAL. OR IS IT?🤨
 
 
@@ -84,3 +84,17 @@ Caesar cipher is an algorithm which is typically used to convert a readable stri
 
 In this task however, I found it much more easier to brute force the caesar cipher and get all 25 possibilities and then pick the one that is legible
 
+<br><br>
+
+<a name = 'playfair'><h3>Playfair Cipher</h3></a>
+
+<br><br>
+
+<a name = 'rsa'><h3>RSA Encryption</h3></a>
+RSA is an asymmetrc encryption algorithm having two different keys, private and public key. It functions on the basis that it is difficult to find the factors of a large composite number, especially if the factors are prime. 
+
+While the math and proofs behind RSA encryption is a bit complex, in a general sense, it follows this formula
+
+`Encrypted message = m<sup>e</sup> % n`
+
+where m = message to be encrypted, e = exponent in public key and n = modulo of public key
