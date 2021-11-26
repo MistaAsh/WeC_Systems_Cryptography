@@ -29,7 +29,7 @@ The oddly specific mention of the king 'Julius Caesar' indicates that the initia
 
 # **Step 3**
 
-Decrypt the message using a *Caesar Cipher* (upon observation we get that a shift = +22 will output a readable message)
+Decrypt the message using a [*Caesar Cipher*](#caesar) (upon observation we get that a shift = +22 will output a readable message)
 
 > THE NEXT CIPHER KEYSQUARE IS THE ALPHABETS WITHOUT J
 STBASHTWOUPSRGBURYNISPBTAEILQSYDSIUBBZOYNSAFPQABTUYMSIPTQCOCILQSKSOCUBEBOCOHPCUDCPCLEAAFPQABUCPAZASC
@@ -73,6 +73,14 @@ As the name suggests, Base64 is an encoding algorithm which helps to convert 8-b
 
 To convert Base64 into ASCII we first read each character in the string, get its index in the *Base64 character set*, convert the decimal value of the index to its bit representation (`bit`) and append the 6-bit string to a master string (`final_bit`).
 
-(Note: we also have to take care of the extra '=' paddings while converting. In my program however, I have manually removed the padding and decremented the total bits by 4)
+(Note: we also have to take care of the extra '=' paddings while converting. In my program however, I have manually removed the padding and decremented the total bits by 4 to account for the = signs)
 
 Now I grouped the remaining bits into parts of 8 and converted the binary first to decimal and then to its corresponding ASCII value.
+
+<br><br>
+
+<a name = 'caesar'><h3>Caesar Cipher</h3></a>
+Caesar cipher is an algorithm which is typically used to convert a readable string of alphabets into an unreadble alphabet string. Here, a key is first set which denotes the number of rotations for the letters (lets say ***i***) and then each alphabet in the string is incremented/decremented to ***i<sup>th</sup>*** alphabet after it. In case we exceed the alphabets, we wrap back to 'A/a' and increment the rest.
+
+In this task however, I found it much more easier to brute force the caesar cipher and get all 25 possibilities and then pick the one that is legible
+
